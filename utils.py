@@ -9,6 +9,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys 
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.actions.wheel_input import ScrollOrigin
 
 from selenium.common.exceptions import ElementNotInteractableException
 from settings import URL_FORMATTED, DRIVER, CLASSNAME_DENY_SUBS
@@ -25,10 +27,8 @@ class Airline_scraper:
         # 'YYYY-MM-DD'
     
         self.url = URL_FORMATTED.format(from_country_code=from_country_code, to_country_code=to_country_code, departure_date=departure_date, return_date=return_date )
-        self.driver = DRIVER
-        self.driver.get(self.url)
-
-        self.next_page_date_prices()
+        
+        self.setting_up_webpage_to_extract()
 
         soup = BeautifulSoup(self.driver.page_source, 'html.parser')
         logging.info('Getting page source from: {from_country_code} to: {to_country_code}, Staying: {departure_date} to {return_date}'.format(to_country_code=to_country_code, from_country_code=from_country_code, departure_date=departure_date, return_date=return_date))
@@ -39,6 +39,20 @@ class Airline_scraper:
 
         self.driver.quit()
         return soup
+    def setting_up_webpage_to_extract(self,month=6):
+
+        self.driver = DRIVER
+        self.driver.get(self.url)
+        self.driver.implicitly_wait(5)
+        self.skip_add()
+        self.driver.implicitly_wait(5)
+        next_button_push = month*5
+        for _ in range(next_button_push):
+            self.next_page_date_prices()
+            sleep(0.25)
+
+        sleep(10)
+
 
     def df_prices_per_date(self,page_source):
         container_prices_and_date = page_source.find('ul', class_='slider')
@@ -75,20 +89,20 @@ class Airline_scraper:
 
     def next_page_date_prices(self):
         
-        sleep(5)
-        self.skip_add()
-        # sleep(5)
-        # self.driver.find_element(By.CSS_SELECTOR,'#content-wrap > div > div > div > div.tripselector_outbound > div > div.wrapper-flightList.flight-space-0 > div.date-slider > button.slider-button.next').click()
-
-    
+        buttons= self.driver.find_elements(By.CLASS_NAME,'slider-button')
+        from_button_next = buttons[1]
+        sleep(1)
+        from_button_next.click()
+      
 
     def skip_add(self):
         
-        sleep(5)
         try:
-            skipping_add = self.driver.find_element(By.CLASS_NAME,CLASSNAME_DENY_SUBS)
-            print(skipping_add)
+            skipping_add = self.driver.find_element(By.ID,'pa-deny-btn')
             skipping_add.click()
+            sleep(3)
+            self.driver.execute_script("window.scrollTo(0, 100);")
+
             logging.info('Add skipped')
         except ElementNotInteractableException:
             logging.info('Add not found')
