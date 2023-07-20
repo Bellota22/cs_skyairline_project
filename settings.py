@@ -61,9 +61,4 @@ ARGUMENTS = [
     "--disk-cache-dir=null",
 ]
 
-chrome_options = webdriver.ChromeOptions()
 
-for args in ARGUMENTS:
-    chrome_options.add_argument(args)
-
-DRIVER = webdriver.Chrome(executable_path='chromedriver.exe') 

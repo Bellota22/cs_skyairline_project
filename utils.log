@@ -1,6 +1,120 @@
 root - INFO - Add skipped
 root - INFO - Scraping started
-root - INFO - No flights found_1
-urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018D7CB51A10>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/078677e06217309494e36987b4b0ea16/source
-urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018D7CB52A90>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/078677e06217309494e36987b4b0ea16/source
-urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018D7CB53090>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/078677e06217309494e36987b4b0ea16/source
+root - INFO - Page source extracted
+root - INFO - Getting page source from: AYP to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: AQP to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: CUZ to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: IQT to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: JUL to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: PCL to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: PIU to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: TBP to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: TPP to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: TRU to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: TYL to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: JAU to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: TCQ to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: CJA to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
+root - INFO - Add skipped
+root - INFO - Scraping started
+root - INFO - Page source extracted
+root - INFO - Getting page source from: CIX to: LIM, Staying: 2023-07-20 to 2023-07-23
+root - INFO - Prices and dates extracted
+root - INFO - Date column converted
+root - INFO - Dataframe structured
+root - INFO - Dataframe saved
