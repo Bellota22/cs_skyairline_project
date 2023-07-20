@@ -1,4 +1,6 @@
 root - INFO - Add skipped
 root - INFO - Scraping started
-root - INFO - Getting page source from: AQP to: LIM, Staying: 2023-07-20 to 2023-07-23
-root - INFO - Prices and dates extracted
+root - INFO - No flights found_1
+urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018D7CB51A10>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/078677e06217309494e36987b4b0ea16/source
+urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018D7CB52A90>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/078677e06217309494e36987b4b0ea16/source
+urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000018D7CB53090>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/078677e06217309494e36987b4b0ea16/source

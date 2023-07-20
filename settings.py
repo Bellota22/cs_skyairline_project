@@ -2,6 +2,21 @@ from selenium import webdriver
 URL_FORMATTED = 'https://www.skyairline.com/english/flujo-compra/busqueda-vuelos?fromCityCode={from_country_code}&fromCityCode={to_country_code}&toCityCode={to_country_code}&toCityCode={from_country_code}&departureDateString={departure_date}&departureDateString={return_date}&fareTypeCategory=1&adults=1&currency=USD&isNewSearch=true&flightType=triptype_roundtrip&flightOriginalType=triptype_roundtrip'
 
 CLASSNAME_DENY_SUBS = 'pa-subs-btn-link'
+
+MONTH_MAP = {
+                    'ene': 'Jan',
+                    'feb': 'Feb',
+                    'mar': 'Mar',
+                    'abr': 'Apr',
+                    'may': 'May',
+                    'jun': 'Jun',
+                    'jul': 'Jul',
+                    'ago': 'Aug',
+                    'sep': 'Sep',
+                    'oct': 'Oct',
+                    'nov': 'Nov',
+                    'dic': 'Dec'
+                }
 list_of_flights = {
             'Peru':{
                 'Trujillo':'TRU',
